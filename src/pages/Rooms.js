@@ -168,4 +168,182 @@ const AmenityItem = styled.li`
   }
 `;
 
-function Rooms() {
+function Rooms() {return (
+    <RoomsContainer>
+      <PropertyHeader>
+        <SectionTitle>Boogie Board Bungalow</SectionTitle>
+        <PropertyDescription>
+          Experience the perfect beach getaway in our spacious, comfortable beach house that offers everything you need for an unforgettable vacation. Just minutes from the beautiful beaches of Ocean City, NJ, our bungalow is ideal for families and groups looking for a relaxing coastal retreat.
+        </PropertyDescription>
+        <KeyFeatures>
+          <FeatureItem>
+            <WifiIcon /> Free High-Speed WiFi
+          </FeatureItem>
+          <FeatureItem>
+            <AcUnitIcon /> Central Air Conditioning
+          </FeatureItem>
+          <FeatureItem>
+            <TvIcon /> Smart TVs
+          </FeatureItem>
+          <FeatureItem>
+            <LocalParkingIcon /> Free Parking
+          </FeatureItem>
+          <FeatureItem>
+            <KitchenIcon /> Fully Equipped Kitchen
+          </FeatureItem>
+          <FeatureItem>
+            <BeachAccessIcon /> Near Beach
+          </FeatureItem>
+        </KeyFeatures>
+      </PropertyHeader>
+      
+      <ContentLayout>
+        <MainContent>
+          <SubTitle>Photo Gallery</SubTitle>
+          <Gallery />
+          
+          <RoomSection>
+            <SubTitle>Rooms & Spaces</SubTitle>
+            <RoomGrid>
+              <RoomCard>
+                <RoomImage src={masterBedroomImage} alt="Master Bedroom" />
+                <RoomContent>
+                  <RoomTitle>Master Bedroom</RoomTitle>
+                  <RoomText>
+                    Spacious master bedroom with a comfortable queen-sized bed, plenty of storage, and natural light. Perfect for a relaxing retreat after a day at the beach.
+                  </RoomText>
+                </RoomContent>
+              </RoomCard>
+              
+              <RoomCard>
+                <RoomImage src={guestBedroomImage} alt="Guest Bedroom" />
+                <RoomContent>
+                  <RoomTitle>Guest Bedroom</RoomTitle>
+                  <RoomText>
+                    Comfortable guest bedroom with a full-sized bed and all the necessities for a good night's sleep. Includes closet space and bedside tables.
+                  </RoomText>
+                </RoomContent>
+              </RoomCard>
+              
+              <RoomCard>
+                <RoomImage src={kidsBedroomImage} alt="Kids Bedroom" />
+                <RoomContent>
+                  <RoomTitle>Kids Bedroom</RoomTitle>
+                  <RoomText>
+                    Fun and functional kids' room with bunk beds, perfect for children or additional guests. Includes storage for toys and clothes.
+                  </RoomText>
+                </RoomContent>
+              </RoomCard>
+              
+              <RoomCard>
+                <RoomImage src={livingRoomImage} alt="Living Room" />
+                <RoomContent>
+                  <RoomTitle>Living Room</RoomTitle>
+                  <RoomText>
+                    Open and airy living room with comfortable seating, smart TV, and plenty of space for the whole family to relax together after a day of beach activities.
+                  </RoomText>
+                </RoomContent>
+              </RoomCard>
+              
+              <RoomCard>
+                <RoomImage src={kitchenImage} alt="Kitchen" />
+                <RoomContent>
+                  <RoomTitle>Kitchen & Dining</RoomTitle>
+                  <RoomText>
+                    Modern, fully-equipped kitchen with all appliances and utensils needed for preparing family meals. Adjacent dining area with seating for everyone.
+                  </RoomText>
+                </RoomContent>
+              </RoomCard>
+              
+              <RoomCard>
+                <RoomImage src={bathroomImage} alt="Bathroom" />
+                <RoomContent>
+                  <RoomTitle>Bathrooms</RoomTitle>
+                  <RoomText>
+                    Clean, updated bathrooms with all the necessities. Indoor bathroom with shower/tub combo and convenient outdoor shower for rinsing off after the beach.
+                  </RoomText>
+                </RoomContent>
+              </RoomCard>
+            </RoomGrid>
+          </RoomSection>
+          
+          <AmenitiesSection>
+            <SubTitle>Amenities</SubTitle>
+            <AmenitiesList>
+              <AmenityCategory>
+                <CategoryTitle>General</CategoryTitle>
+                <CategoryList>
+                  <AmenityItem>WiFi throughout property</AmenityItem>
+                  <AmenityItem>Central air conditioning</AmenityItem>
+                  <AmenityItem>Heating system</AmenityItem>
+                  <AmenityItem>Smoke detectors</AmenityItem>
+                  <AmenityItem>Carbon monoxide detectors</AmenityItem>
+                  <AmenityItem>Fire extinguisher</AmenityItem>
+                </CategoryList>
+              </AmenityCategory>
+              
+              <AmenityCategory>
+                <CategoryTitle>Kitchen</CategoryTitle>
+                <CategoryList>
+                  <AmenityItem>Full-sized refrigerator</AmenityItem>
+                  <AmenityItem>Stove and oven</AmenityItem>
+                  <AmenityItem>Microwave</AmenityItem>
+                  <AmenityItem>Dishwasher</AmenityItem>
+                  <AmenityItem>Coffee maker</AmenityItem>
+                  <AmenityItem>Toaster</AmenityItem>
+                  <AmenityItem>Cookware and utensils</AmenityItem>
+                  <AmenityItem>Dishes and glassware</AmenityItem>
+                </CategoryList>
+              </AmenityCategory>
+              
+              <AmenityCategory>
+                <CategoryTitle>Living Areas</CategoryTitle>
+                <CategoryList>
+                  <AmenityItem>Smart TV</AmenityItem>
+                  <AmenityItem>Comfortable seating</AmenityItem>
+                  <AmenityItem>Dining table and chairs</AmenityItem>
+                  <AmenityItem>Board games</AmenityItem>
+                </CategoryList>
+              </AmenityCategory>
+              
+              <AmenityCategory>
+                <CategoryTitle>Bedrooms</CategoryTitle>
+                <CategoryList>
+                  <AmenityItem>Fresh linens provided</AmenityItem>
+                  <AmenityItem>Extra pillows and blankets</AmenityItem>
+                  <AmenityItem>Closet space</AmenityItem>
+                  <AmenityItem>Ceiling fans</AmenityItem>
+                </CategoryList>
+              </AmenityCategory>
+              
+              <AmenityCategory>
+                <CategoryTitle>Bathrooms</CategoryTitle>
+                <CategoryList>
+                  <AmenityItem>Bath towels provided</AmenityItem>
+                  <AmenityItem>Outdoor shower</AmenityItem>
+                  <AmenityItem>Hair dryer</AmenityItem>
+                </CategoryList>
+              </AmenityCategory>
+              
+              <AmenityCategory>
+                <CategoryTitle>Outdoor</CategoryTitle>
+                <CategoryList>
+                  <AmenityItem>Deck area</AmenityItem>
+                  <AmenityItem>Outdoor furniture</AmenityItem>
+                  <AmenityItem>Beach gear available</AmenityItem>
+                  <AmenityItem>Parking space</AmenityItem>
+                </CategoryList>
+              </AmenityCategory>
+            </AmenitiesList>
+          </AmenitiesSection>
+        </MainContent>
+        
+        <SideContent>
+          <BookingForm />
+        </SideContent>
+      </ContentLayout>
+    </RoomsContainer>
+  );
+}
+
+export default Rooms;
