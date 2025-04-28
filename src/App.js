@@ -6,20 +6,21 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Rooms from './pages/Rooms';
 import Attractions from './pages/Attractions';
-import logo from './logo.svg';
+import Gallery from './components/Gallery';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Navigation />
+        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/attractions" element={<Attractions />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </main>
         <Footer />
